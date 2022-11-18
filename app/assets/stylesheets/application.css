@@ -13,18 +13,16 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  margin: 0px;
+  height: 100vh;
+ }
 
  h1, h2, h3, p {
   margin: 0px;
   font-weight: 200;
  }
 
-
-
-
- body {
-  margin: 0px;
- }
 .nav-bar {
   background-color: rgb(235, 235, 235);
   padding: 10px;
@@ -68,8 +66,9 @@
  .show-card-info{
   margin: 10px;
   background-color: rgb(240, 238, 238);
-  border-radius: 5px;
+  border-radius: 1px;
   padding: 10px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
  }
  #show-img{
   width: 100%;
