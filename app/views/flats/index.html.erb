@@ -1,15 +1,12 @@
-<div class="nav-bar">
-  <h1>Simple AirBnB</h1>
-</div>
 <div class="container">
   <h2>All Our Flats</h2>
   <div class="cards">
     <% @flats.each do |flat| %>
-      <div class="card">
+      <div class="card-info">
         <h3><%= flat.name %></h3>
         <p><%= flat.description %></p>
         <div class="card-info">
-          <p><i class="fa-thin fa-people"></i><%= flat.number_of_guests %></p>
+          <p><%= flat.number_of_guests %></p>
           <p><%= flat.price_per_night%></p>
         </div>
       </div>
