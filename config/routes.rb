@@ -5,5 +5,9 @@ Rails.application.routes.draw do
   # root "articles#index"
   get 'flats', to: 'flats#index'
   get 'flats/new', to: 'flats#new'
-  get 'flats/:id', to: 'flats#show'
+  post 'flats', to: 'flats#create'
+  get 'flats/:id', to: 'flats#show', as: 'flat'
+  get 'flats/:id/edit', to: 'flats#edit'
+  patch 'flats/:id', to: 'flats#update'
+  delete 'flats/:id', to: 'flats#destroy'
 end

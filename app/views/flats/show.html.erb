@@ -1,4 +1,4 @@
-<img src="https://source.unsplash.com/random/?houses" alt="" id="show-img">
+<img src="https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" id="show-img">
 <div class="container">
   <div class="show-cards">
     <div class="show-card">
@@ -13,3 +13,7 @@
     </div>
   </div>
 </div>
+ <%= link_to 'Delete',
+ flat_path(@flat),
+ data: {turbo_method: :delete, turbo_confirm: "Are you Sure?"}
+ %>
