@@ -3,14 +3,16 @@
   <div class="cards">
     <% @flats.each do |flat| %>
       <div class="card">
-        <h3><%= flat.name %></h3>
-        <p><%= flat.description %></p>
+        <div class="card-title">
+          <h3><%= flat.name %></h3>
+        </div>
+        <img src="https://images.unsplash.com/photo-1600563438938-a9a27216b4f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="">
         <div class="card-info">
-          <p><%= flat.number_of_guests %></p>
-          <p><%= flat.price_per_night%></p>
+          <p><%= flat.description %></p>
+          <p><i class="fa-regular fa-people-simple"></i><%= flat.number_of_guests %></p>
+          <p><i class="fa-regular fa-dollar-sign"></i><%= flat.price_per_night%></p>
         </div>
       </div>
     <% end %>
   </div>
 </div>
-<i class="fa-thin fa-people"></i>
